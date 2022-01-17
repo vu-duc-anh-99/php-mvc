@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý sinh viên</title>
 </head>
+
 <body>
-    
+    aaaa
+    bbbb
+    cccc
 </body>
+
 </html>
 
-<?php 
+<?php
 
-    include "DBconfig/DBConfig.php";
+include "DBconfig/DBConfig.php";
 
-    if(isset($_GET['controller'])){
-        $controller = $_GET['controller'];
-    }
-    else{
-        $controller = "";
-    }
+if (isset($_GET['controller'])) {
+    $controller = $_GET['controller'];
+} else {
+    $controller = "";
+}
 
-    switch ($controller) {
-        case 'sinh-vien':
-            include 'Controller/sinhvien/index.php';
-            break;
-        default:
-            include 'Controller/sinhvien/index.php';
-            break;
-    }
+switch ($controller) {
+    case 'sinh-vien':
+        include 'Controller/sinhvien/index.php';
+        break;
+    default:
+        include 'Controller/sinhvien/index.php';
+        break;
+}
 ?>
